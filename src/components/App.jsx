@@ -12,9 +12,9 @@ export class App extends Component {
     bad: 0,
   };
 
-  leaveFeedback = key => {
+  leaveFeedback = e => {
     this.setState(prevState => ({
-      [key]: prevState[key] + 1,
+      [e]: prevState[e] + 1,
     }));
   };
 
